@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>custom cursors</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            height: 100%;
+            overflow: hidden;
+        }
+
+        body {
+            scroll-snap-type: y mandatory;
+            overflow-y: scroll;
+        }
+
+        section {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            scroll-snap-align: start;
+            font-size: 2rem;
+            color: white;
+        }
+
+        section:nth-child(1) {
+            background: #ff5733;
+            cursor: url('bee.cur'), auto;
+        }
+
+        section:nth-child(2) {
+            background: #33a1ff;
+            cursor: url('spider.cur'), auto;
+        }
+
+        section:nth-child(3) {
+            background: #8d33ff;
+            cursor: url('paw.cur'), auto;
+        }
+
+        section:nth-child(4) {
+            background: #33ff57;
+            cursor: url('butterfly.cur'), auto;
+        }
+
+        section:nth-child(5) {
+            background: #4429a2;
+            cursor: url('sward.cur'), auto;
+        }
+
+        section:nth-child(6) {
+            background: #E7cf02;
+            cursor: url('injection.cur'), auto;
+        }
+
+        .imgs {
+            width: 10em;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <section> <img class="imgs" src="hive.png "> </section>
+    <section> <img class="imgs" src="web.png "> </section>
+    <section> <img class="imgs" src="rat.png "> </section>
+    <section> <img class="imgs" src="flower.png "> </section>
+    <section> <img class="imgs" src="water.png "> </section>
+    <section> <img class="imgs" src="shin.png "> </section>
+</body>
+
+</html>
